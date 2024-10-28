@@ -12,12 +12,105 @@
     </nav>
     <main>
         <h2>Vacation Contest Sign-Up Form</h2>
-        <form> <!-- TODO: Set Action and Method Properties -->
+        <form action="/submit" method="POST"> <!-- Set Action and Method Properties -->
+            <div>
+                <label for="firstname">Your First Name</label>
+                <input type="text" id="firstname" name="firstname" required>
+            </div>
+            <div>
+                <label for="lastname">Your Last Name</label>
+                <input type="text" id="lastname" name="lastname" required>
+            </div>> 
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="address">Street Address</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div>
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+                <div>
+                    <label for="state">State</label>
+                    <input type="text" id="state" name="state" required>
+                </div>
+                <div>
+                    <label for="zip">Zip Code</label>
+                    <input type="text" id="zip" name="zip" required>
+                </div>
+            </fieldset><!-- TODO: Set Action and Method Properties -->
             <div>
                 <label for="firstname">Your First Name</label>
                 <input type="text" id="firstname" name="firstname">
-                <!-- TODO: Create a "lastname" input with type "text" -->
             </div>
+                <div>
+                    <label for="lastname">Your Last Name</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                </div>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <div>
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="address">Street Address</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    <div>
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    <div>
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="state" required>
+                    </div>
+                    <div>
+                        <label for="zip">Zip Code</label>
+                        <input type="text" id="zip" name="zip" required>
+                    </div>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Select Your Preferred Destination</legend>
+                    <div>
+                        <label><input type="radio" name="destination" value="beach" required> Beach</label>
+                    </div>
+                    <div>
+                        <label><input type="radio" name="destination" value="mountains" required> Mountains</label>
+                    </div>
+                    <div>
+                        <label><input type="radio" name="destination" value="city" required> City</label>
+                    </div>
+                </fieldset>
+    
+                <div>
+                    <label for="favoriteColor">Favorite Color</label>
+                    <input type="color" id="favoriteColor" name="favoriteColor">
+                </div>
+    
+                <fieldset>
+                    <legend>Select Extra Add-Ons</legend>
+                    <div>
+                        <label><input type="checkbox" name="addons" value="guide"> Guided Tour</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="addons" value="meal"> Meal Plan</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="addons" value="insurance"> Travel Insurance</label>
+                    </div>
+                </fieldset>
+    
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+    
             <!-- TODO: Make fieldset and legend -->
             <!-- Todo: Email Input -->
             <!-- Todo: Street Address Input -->
